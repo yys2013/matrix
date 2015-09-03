@@ -5,11 +5,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/excel")
 public class ExcelOperController {
     
-    @RequestMapping("/excel/qry")
-    public void queryData(Model model) {
+    @RequestMapping("/qry")
+    public String queryData(Model model) {
         System.out.println("name!");
         model.addAttribute("name", "hello");
+        return "index";
     }
 }
