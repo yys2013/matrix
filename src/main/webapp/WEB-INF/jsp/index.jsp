@@ -124,7 +124,7 @@
         		<div id="sidebar-left" class="col-xs-2 col-sm-2">
                     <ul class="nav main-menu">
         				<li>
-        					<a href="index.jsp" class="active ajax-link">
+        					<a href="resources/html/show_pro.html" class="active ajax-link">
         						<i class="fa fa-dashboard"></i>
         						<span class="hidden-xs">Dashboard</span>
         					</a>
@@ -135,7 +135,7 @@
         						<span class="hidden-xs">Charts</span>
         					</a>
         					<ul class="dropdown-menu">
-        						<li><a class="ajax-link" href="<%=path%>/html/tables_simple.html">xCharts</a></li>
+        						<li><a class="ajax-link" href="resources/html/tables_simple.html">xCharts</a></li>
         						<li><a class="ajax-link" href="ajax/charts_flot.html">Flot Charts</a></li>
         						<li><a class="ajax-link" href="ajax/charts_google.html">Google Charts</a></li>
         						<li><a class="ajax-link" href="ajax/charts_morris.html">Morris Charts</a></li>

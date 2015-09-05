@@ -3,11 +3,6 @@
 	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
-	<display-name>matrix</display-name>
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-	</welcome-file-list>
-
 	<context-param>
 	        <param-name>contextConfigLocation</param-name>
 	        <param-value></param-value>
@@ -27,12 +22,10 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     
-	
     <servlet-mapping>
         <servlet-name>matrix</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
 
 	<servlet>
 		<servlet-name>process</servlet-name>
