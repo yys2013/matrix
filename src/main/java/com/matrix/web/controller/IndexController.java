@@ -12,4 +12,10 @@ public class IndexController {
         return "index";
     }
     
+    @RequestMapping(path="/qui")
+    public String showJqueryTest() {
+        System.out.println("==================index=====================");
+        return "test";
+    }
+    
 }

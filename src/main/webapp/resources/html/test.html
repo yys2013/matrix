@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Draggable - Revert position</title>
+  <style>
+  #draggable, #draggable2 { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 0 10px 10px 0; }
+  </style>
+  <script>
+  $(function() {
+    $( "#draggable" ).draggable({ revert: true });
+    $( "#draggable2" ).draggable({ revert: true, helper: "clone" });
+//     $("div.box" ).draggable({ revert: true });
+  });
+
+  </script>
+</head>
+<body>
+ 
+<div id="draggable">
+  <p>Revert the original</p>
+</div>
+ 
+<div id="draggable2">
+  <p>Revert the helper</p>
+</div>
+
+<div id="uii">
+  <p>Revert the original</p>
+</div>
+<div class="content">
+</div>
+  <script>
+  LoadAjaxContent("resources/html/tables_simple.html");
+  </script>
+</body>

@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<%
-	String path = request.getContextPath();
-%>
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Index</title>
-        <!-- Bootstrap -->
-        <link href="<%=path%>/resources/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="<%=path%>/resources/css/style_v1.css" rel="stylesheet">
+        <title>Matrix</title>
+        <link rel="shortcut icon" type="image/x-icon" href="resources/img/matrix.ico" />
+        <link href="resources/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="plugins/html5shiv.min.js"></script>
-            <script src="plugins/respond.min.js"></script>
-        <![endif]-->
-        <script src="<%=path%>/resources/plugins/jquery.min.js"></script>
-        <script src="<%=path%>/resources/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="<%=path%>/resources/js/mgnt_v1.js"></script>
+        <link href="resources/css/style_v1.css" rel="stylesheet">
+        <script src="resources/plugins/jquery/jquery-1.11.3.min.js"></script>
+        <script src="resources/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="resources/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="resources/js/mgnt_v1.js"></script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+				<script src="http://getbootstrap.com/docs-assets/js/html5shiv.js"></script>
+				<script src="http://getbootstrap.com/docs-assets/js/respond.min.js"></script>
+		<![endif]-->
     </head>
     <body>
         <!--Start Header-->
@@ -28,7 +25,7 @@
         	<div class="container-fluid expanded-panel">
         		<div class="row">
         			<div id="logo" class="col-xs-12 col-sm-2">
-        				<a href="index.html">Mgnt System V1</a>
+        				<a href="">Mgnt System V12</a>
         			</div>
         			<div id="top-panel" class="col-xs-12 col-sm-10">
         				<div class="row">
@@ -63,7 +60,7 @@
         							<li class="dropdown">
         								<a href="#" class="dropdown-toggle account" data-toggle="dropdown">
         									<div class="avatar">
-        										<img src="<%=path%>/resources/img/avatar.jpg" class="img-circle" alt="avatar" />
+        										<img src="resources/img/matrix.ico" class="img-circle" alt="avatar" />
         									</div>
         									<i class="fa fa-angle-down pull-right"></i>
         									<div class="user-mini pull-right">
@@ -136,8 +133,8 @@
         					</a>
         					<ul class="dropdown-menu">
         						<li><a class="ajax-link" href="resources/html/tables_simple.html">xCharts</a></li>
-        						<li><a class="ajax-link" href="ajax/charts_flot.html">Flot Charts</a></li>
-        						<li><a class="ajax-link" href="ajax/charts_google.html">Google Charts</a></li>
+        						<li><a class="ajax-link" href="resources/html/tables_datatables.html">Flot Charts</a></li>
+        						<li><a class="ajax-link" href="resources/html/tables_beauty.html">Google Charts</a></li>
         						<li><a class="ajax-link" href="ajax/charts_morris.html">Morris Charts</a></li>
         						<li><a class="ajax-link" href="ajax/charts_amcharts.html">AmCharts</a></li>
         						<li><a class="ajax-link" href="ajax/charts_chartist.html">Chartist</a></li>
@@ -159,6 +156,9 @@
                 </div>
                 <!--Start Content-->
         		<div id="content" class="col-xs-12 col-sm-10">
+        			<div id="ipagediv">
+					<iframe id="ipage" name="nipage" target="nipage" runat="server" src="http://www.baidu.com" width="100%" height="700" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+        			</div>
         			<div id="about">
         				<div class="about-inner">
         					<h4 class="page-header">Open-source admin theme for you</h4>
@@ -170,7 +170,7 @@
         				</div>
         			</div>
         			<div class="preloader">
-        				<img src="<%=path%>/resources/img/devoops_getdata.gif" class="devoops-getdata" alt="preloader"/>
+        				<img src="resources/img/devoops_getdata.gif" class="devoops-getdata" alt="preloader"/>
         			</div>
         			<div id="ajax-content"></div>
         		</div>

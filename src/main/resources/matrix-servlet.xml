@@ -21,6 +21,7 @@
 <!-- 	<mvc:resources location="/resources/img/" mapping="/resources/img/**" /> -->
 <!-- 	<mvc:resources location="/resources/js/" mapping="/resources/js/**" /> -->
 <!-- 	<mvc:resources location="/resources/plugins/" mapping="/resources/plugins/**" /> -->
+	<mvc:resources location="/plugins/" mapping="/plugins/**" />
 	<mvc:resources location="/resources/" mapping="/resources/**" />
 	
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">

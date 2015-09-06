@@ -1134,6 +1134,7 @@ function LoadSparkLineScript(callback){
 //  Function for load content from url and put in $('.ajax-content') block
 //
 function LoadAjaxContent(url){
+	$("#ipagediv").hide();
 	$('.preloader').show();
 	$.ajax({
 		mimeType: 'text/html; charset=utf-8', // ! Need set mimeType only when run from local file
@@ -1154,7 +1155,7 @@ function LoadAjaxContent(url){
 //  Function maked all .box selector is draggable, to disable for concrete element add class .no-drop
 //
 function WinMove(){
-	$( "div.box").not('.no-drop')
+	$("div.box").not('.no-drop')
 		.draggable({
 			revert: true,
 			zIndex: 2000,
@@ -3356,9 +3357,11 @@ $(document).ready(function () {
 	});
 	var ajax_url = location.hash.replace(/^#/, '');
 	if (ajax_url.length < 1) {
-		ajax_url = 'index.jsp';
+//		ajax_url = 'resources/html/tables_simple.html';
+		$("#ipagediv").show();
 	}
-	LoadAjaxContent(ajax_url);
+	//alert(ajax_url);
+	//LoadAjaxContent(ajax_url);
 	$('.main-menu').on('click', 'a', function (e) {
 		var parents = $(this).parents('li');
 		var li = $(this).closest('li.dropdown');
